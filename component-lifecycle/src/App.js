@@ -55,6 +55,22 @@ class Number extends Component {
   componentWillReceiveProps(newProps){
     console.log("componentWillReceiveProps called here")
   }
+  shouldComponentUpdate(newProps , nextState){
+    console.log("called should component Update");
+    return true;
+  }
+  componentWillUpdate(newProps , nextState){
+    console.log("called  component will Update");
+  }
+  componentDidUpdate(newProps , nextState){
+    console.log("called  component Did Update");
+  }
+  componentWillUnmount(newProps , nextState){
+    console.log("called  component will unmount");
+  }
+
+
+
   render(){
     return(
       <div>
